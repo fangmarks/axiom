@@ -7,6 +7,7 @@ export default function CustomHead(props: { title?: string, description?: string
     return (
         <>
             <Head>
+                <script async defer data-website-id="b0a1cf56-c1f9-4a5c-bb1b-1a9c812ac857" src="https://stats.lio.cat/umami.js"></script>
                 {props.title ? (
                     <>
                         <title>
