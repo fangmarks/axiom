@@ -4,7 +4,7 @@ import { getAllPosts, Post } from ".";
 import CustomHead from "../components/CustomHead";
 import BlogName from "../constants";
 
-export async function getServerSideProps({
+export async function getStaticProps({
   // @ts-ignore
   params: { slug },
 }: {
@@ -61,12 +61,12 @@ const BlogPost: React.FC<{ post: Post; blocks: BlockMapType, BlogName: string }>
   );
 };
 
-// export async function getStaticPaths() {
-//   const table = await getAllPosts();
-//   return {
-//     paths: table.map((row) => `/${row.slug}`),
-//     fallback: true,
-//   };
-// }
+export async function getStaticPaths() {
+  const table = await getAllPosts();
+  return {
+    paths: table.map((row) => `/${row.slug}`),
+    fallback: true,
+  };
+}
 
 export default BlogPost;
