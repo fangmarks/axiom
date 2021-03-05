@@ -3,9 +3,27 @@
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  /* transition: all 100ms ease-in-out; */
 }
 
 .sub {
   color: gray;
-  font-size: 13px;
+  font-size: 15px;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a,
+.notion-link {
+  text-decoration: none;
+  color: hsl(278, 100%, 50%) !important;
+  /* border-bottom: solid rgb(212, 212, 212) 2px; */
+}
+a :hover,
+.notion-link:hover,
+h1 :hover {
+  text-decoration: line-through;
+  color: #ffa500 im !important;
 }
