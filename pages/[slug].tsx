@@ -39,7 +39,7 @@ const BlogPost: React.FC<{ post: Post; blocks: BlockMapType, BlogName: string }>
 
   return (
     <div className="content">
-      <CustomHead title={post.title} />
+      <CustomHead title={post.title} description={post.description} />
       <span style={{ marginBottom: "0" }}>
         <span>
           <Link href='/'>
