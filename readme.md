@@ -20,6 +20,12 @@ Open Vercel's Environment Variables Page and add the ID of your blog as a Variab
 Then simply run `vercel` in your terminal to get it up onto Vercel
 
 
+# Writing Entries (important note)
+
+I haven't personally found out how to sort blog entries properly, so for now you'll have to manually assign each new post a unique number within the `place` field on the Notion Table.
+Posts are sorted in a descending fashion for now, you're welcome to open a PR and implement proper date sorting. 
+
+
 ## Develop Locally
 
 ```bash
