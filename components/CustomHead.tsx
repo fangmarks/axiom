@@ -7,12 +7,23 @@ export default function CustomHead(props: { title?: string, description?: string
     return (
         <>
             <Head>
-                <script async defer data-website-id="b0a1cf56-c1f9-4a5c-bb1b-1a9c812ac857" src="https://stats.lio.cat/umami.js"></script>
+
+                {() => {
+                    if (process.env.NODE_ENV !== "development")
+                        return (
+                            <script async defer data-website-id="b0a1cf56-c1f9-4a5c-bb1b-1a9c812ac857" src="https://stats.lio.cat/umami.js"></script>
+                        )
+                }}
+
+                <link rel="shortcut icon" href="https://common.himbo.cat/avatars/caecus/ref_head.jpg" type="image/x-icon" />
+
                 {props.title ? (
                     <>
                         <title>
                             {props.title} | {BlogName}
                         </title>
+
+
 
                         <meta property="og:title" content={props.title + ' | ' + BlogName} />
                         <meta property="og:description" content={props.description} />

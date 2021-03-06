@@ -48,9 +48,7 @@ const BlogPost: React.FC<{ post: Post; blocks: BlockMapType, BlogName: string }>
             </a>
           </Link>
         </span>
-        <span> </span>
-        <span style={{ fontSize: "30px" }}>/</span>
-        <span> </span>
+        <br />
         <span style={{ fontSize: "30px" }}>{post.title}</span>
         <br />
         {post.description}
