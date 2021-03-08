@@ -8,14 +8,8 @@ export default function CustomHead(props: { title?: string, description?: string
         <>
             <Head>
 
-                {() => {
-                    if (process.env.NODE_ENV !== "development")
-                        return (
-                            <script async defer data-website-id="b0a1cf56-c1f9-4a5c-bb1b-1a9c812ac857" src="https://stats.lio.cat/umami.js"></script>
-                        )
-                }}
-
                 <link rel="shortcut icon" href="https://common.himbo.cat/avatars/caecus/ref_head.jpg" type="image/x-icon" />
+                <script async defer data-website-id="b0a1cf56-c1f9-4a5c-bb1b-1a9c812ac857" src="https://stats.lio.cat/umami.js"></script>
 
                 {props.title ? (
                     <>
